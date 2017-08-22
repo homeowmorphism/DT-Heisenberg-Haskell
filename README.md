@@ -20,4 +20,13 @@ You should see the following response.
 Ok, modules loaded: Group, HSet, Heisenberg, IntSet, Set.
 ```
 
+With the `HSet` module loaded, you have different options for returning balls of different generating sets (with the option to add more). The default options are `balls2, balls3, ballsKnight`.
 
+```
+*HSet> balls2
+```
+returns the elements in the ball with generating set `gen2` (see .. for ) 
+
+
+
+# Understanding the code
