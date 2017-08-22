@@ -70,7 +70,7 @@ How many HSets are there in a ball of radius `n`? This needs to be proven but in
 
 This code was written by [Dylan Thurston](http://pages.iu.edu/~dpthurst/). Documentation by [Hang Lu Su](http://homeowmorphism.com/).
 
-# Questions for myself
+# Questions
 
 * What is the actual complexity of HSet multiplication? *Hint:* Linear or less.
 * Work out the geometry of the generating sets with respect to those `c` intervals.
