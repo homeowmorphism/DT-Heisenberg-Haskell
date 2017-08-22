@@ -29,9 +29,6 @@ prints the sizes for the ball with `gens2` as generating set. `Heisenberg.hs` te
 
 See print the balls themselves section for more details.
 
-## Shortcuts
-
-
 # Understanding the code
 
 
