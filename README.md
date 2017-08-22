@@ -7,6 +7,11 @@ From the command line, type
 ```
 $ ghci
 Prelude> :load HSet.hs
+```
+
+You should see the following response. 
+
+```
 [1 of 5] Compiling Group            ( Group.hs, interpreted )
 [2 of 5] Compiling Heisenberg       ( Heisenberg.hs, interpreted )
 [3 of 5] Compiling Set              ( Set.hs, interpreted )
