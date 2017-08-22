@@ -23,3 +23,8 @@ returns the elements in the ball with generating set `gen2`. `Heisenberg.hs` tel
 
 
 # Understanding the code
+
+
+# Credit
+
+This code was written by [Dylan Thurston](http://pages.iu.edu/~dpthurst/). Documentation by [Hang Lu Su](http://homeowmorphism.com/).
