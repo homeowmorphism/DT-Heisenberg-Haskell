@@ -55,6 +55,9 @@ Back to `HSet.hs`, the `IntSet.hs` pays off its dividends. Instead of defining s
 
 ### Complexity
 
+Like in the naive solution, there is a certain number of elements in the ball of radius `n`, and `n` steps need to be executed to get our solution. Let `B(n)` be the number of HSet elements in the ball, and assume for sake of argument (I will need to confirm this later) that multiplication with an HSet element is `O(1)`. 
+
+How many HSets are there in a ball of radius `n`? This needs to be proven but intuititvely, the power of `n` represents the volume element of the ball. Since we have one less coordinate to worry about, there are `O(n^2)` HSets in the ball. 
 
 --- 
 
