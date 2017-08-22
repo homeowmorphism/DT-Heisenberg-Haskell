@@ -64,3 +64,8 @@ How many HSets are there in a ball of radius `n`? This needs to be proven but in
 # Credit
 
 This code was written by [Dylan Thurston](http://pages.iu.edu/~dpthurst/). Documentation by [Hang Lu Su](http://homeowmorphism.com/).
+
+# Questions for myself
+
+* Can you prove that there are `O(n^2)` HSets in each ball?
+* What is the actual complexity of operating on an HSet?
