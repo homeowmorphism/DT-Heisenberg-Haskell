@@ -25,7 +25,9 @@ $ ghci
 Prelude> :load Test.hs
 *Test> sizes gen2
 ```
-prints the sizes for the ball with `gens2` as generating set. See (print the balls themselves section for more details).
+prints the sizes for the ball with `gens2` as generating set. `Heisenberg.hs` tells us that`gens2` represents the standard generating set. Other preset options in `Heisenberg.hs` are: `gen3` and `genKnight`.
+
+See print the balls themselves section for more details.
 
 ## Shortcuts
 
