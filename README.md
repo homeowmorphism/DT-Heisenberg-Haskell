@@ -31,7 +31,7 @@ See print the balls themselves section for more details.
 
 # Understanding the code
 
-*Since it is unreasonable to expect someone to be simultaneously fluent in Haskell and in the Heisenberg group.*
+*Since it is unreasonable to expect someone to be simultaneously fluent in Haskell and in the Heisenberg group, we chose to expect some fluency with the Heisenberg group.*
 
 The code starts with the file `Group.hs` which is simply defined as a monoid with an inverse operation. How to take the inverse is unspecified and left to the individual group. 
 
