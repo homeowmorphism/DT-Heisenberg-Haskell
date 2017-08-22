@@ -1,6 +1,6 @@
 # Run
 
-You will need a version of [Haskell](). 
+You will need a version of [Haskell](https://www.haskell.org/). 
 
 From the command line, type
 
@@ -9,7 +9,7 @@ $ ghci
 Prelude> :load HSet.hs
 ```
 
-You should see the following response. 
+You should see the following response.
 
 ```
 [1 of 5] Compiling Group            ( Group.hs, interpreted )
