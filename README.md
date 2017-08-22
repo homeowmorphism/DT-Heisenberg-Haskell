@@ -33,7 +33,8 @@ See print the balls themselves section for more details.
 
 The code starts with the file `Group.hs` which is simply defined as a monoid with an inverse operation. How to take the inverse is unspecified and left to the individual group. 
 
-`Heisenberg.hs` defines the Heisenberg group, first as a monoid with individual element `Heisen` which takes as input the three parameters `a, b, c` of type `!Int`, which correspond to the coordinates of the group of matrices `[[1,a,b],[0,1,c],[0,0,1]]`. `Heisen` is then defined as a group with inverse operation which maps `a b c` to `-a -b -c+a*b` (which is the correct formulation given the matrix notation). 
+`Heisenberg.hs` defines the Heisenberg group, using individual element `Heisen` which inherits the type `Monoid` and takes as input the three parameters `a, b, c` of type `!Int`, which correspond to the coordinates of the group of matrices `[[1,a,b],[0,1,c],[0,0,1]]`. `Heisen` is then defined as a group element with inverse operation which maps `a b c` to `-a -b -c+a*b` (which is the correct formulation given the matrix notation). A type `Gens` (which stands for a generating set) is defined a list of `Heisen` elements. The function `makeSym` makes a given generating set a symmetric one by adding in the `one` element and the inverses of each element.
+
 
 
 # Credit
