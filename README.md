@@ -75,3 +75,6 @@ This code was written by [Dylan Thurston](http://pages.iu.edu/~dpthurst/). Docum
 * What is the actual complexity of HSet multiplication? *Hint:* Linear or less.
 * Work out the geometry of the generating sets with respect to those `c` intervals.
 * Can you prove that there are `O(n^2)` HSets in each ball?
+
+* How does Haskell do lazy evaluation?
+* Is it possible to input a number `n` and print the associated `sigma_n`?
