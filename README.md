@@ -7,6 +7,7 @@ From the command line, type
 ```
 $ ghci
 Prelude> :load HSet.hs
+*HSet>
 ```
 
 With the `HSet` module loaded, you have different options for returning balls of different generating sets (with the option to add more). The default options are `balls2, balls3, ballsKnight`.
