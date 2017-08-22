@@ -39,8 +39,9 @@ The code starts with the file `Group.hs` which is simply defined as a monoid wit
 
 ### Complexity
 
-Let `n` be the radius of the ball for which we are calculating the size of. Let's assume monoid multiplication between `Heisen` element takes `O(1)` time. By a [formula of Bass and Guivarc'h](https://en.wikipedia.org/wiki/Gromov%27s_theorem_on_groups_of_polynomial_growth), each ball contains `O(n^3)` Heisen elements. Since we do multiplication on each element of the ball at each steps, it takes `O(n^3) = O(1)*O(n^3)` time to execute each step. Since we would like to know the size of the ball of radius `n`, we need to execute `n` such steps. Therefore, the time-complexity is `O(n^4)`.
+Let `n` be the radius of the ball for which we are calculating the size of. Let's assume monoid multiplication between `Heisen` element takes `O(1)` time. By a [formula of Bass and Guivarc'h](https://en.wikipedia.org/wiki/Gromov%27s_theorem_on_groups_of_polynomial_growth), each ball contains `O(n^3)` Heisen elements. Since we do multiplication on each element of the ball at each steps, it takes `O(n^3) = O(1)*O(n^3)` time to execute each step. Since we would like to know the size of the ball of radius `n`, we need to execute `n` such steps. Therefore, the time-complexity is `O(n^4)`. 
 
+However, everything is lazily evaluated and I suspect that Haskell could be doing some optimization leading to an `O(n^3)` complexity. -- I need to ask someone about this.
 
 ## Better than the naive solution: how to reduce by a linear factor.
 
@@ -53,6 +54,7 @@ The biggest challenge in understanding `IntSet.hs` is realizing that this data t
 Back to `HSet.hs`, the `IntSet.hs` pays off its dividends. Instead of defining single elements of `Heisenberg` as `H a b c`, we define a single element of an `HSet` as `H a b cs` where `cs` represents an interval of integers of type `IntSet`. Thus, many elements of the Heisenberg group with the same `a, b` coordinates can be compressed in that way. `merge', Set HSet` and `translateHS` all inherit their functionality from their `IntSet` counterpart. This allows us to treat `HSet` as a `Monoid` with multiplication given by `translateHS` effectively reducing the computation by a dimension. 
 
 ### Complexity
+
 
 --- 
 
