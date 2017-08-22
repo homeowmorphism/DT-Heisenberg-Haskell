@@ -68,4 +68,4 @@ This code was written by [Dylan Thurston](http://pages.iu.edu/~dpthurst/). Docum
 # Questions for myself
 
 * Can you prove that there are `O(n^2)` HSets in each ball?
-* What is the actual complexity of operating on an HSet?
+* What is the actual complexity of HSet multiplication? *Hint:* Linear or less.
