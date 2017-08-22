@@ -31,6 +31,8 @@ See print the balls themselves section for more details.
 
 # Understanding the code
 
+The code starts with the file `Group.hs` which is simply defined as a monoid with an inverse operation. How to take the inverse is unspecified and left to the individual group. 
+
 
 # Credit
 
